@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bites - Food Recipes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff8f0;
+            color: #333;
+        }
+        header {
+            background-color: #ff6f3c;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fGZvb2R8ZW58MHx8fHwxNjAxNjk0NDk2&ixlib=rb-4.0.3&q=80&w=1080') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 6px #000;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .recipes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px 20px;
+            gap: 20px;
+        }
+        .recipe-card {
+            background-color: #fff3e6;
+            border-radius: 10px;
+            width: 250px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        .recipe-card:hover {
+            transform: scale(1.05);
+        }
+        .recipe-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .recipe-card h3 {
+            text-align: center;
+            margin: 10px 0;
+        }
+        .recipe-card p {
+            padding: 0 10px 10px 10px;
+            font-size: 0.9rem;
+        }
+        footer {
+            background-color: #ff6f3c;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+        @media(max-width: 768px){
+            .recipes {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Delicious Bites</h1>
+    <nav>
+        <a href="#recipes">Recipes</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero">
+    Explore Amazing Food Recipes!
+</div>
+
+<section id="recipes" class="recipes">
+    <div class="recipe-card">
+        <img src="https://images.unsplash.com/photo-1605478412263-3b997f0c9a47?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHBhbmVlciUyMGJ1dHRlciUyMG1hc2FsYXxlbnwwfHx8fDE2MDE2OTQ1NzA&ixlib=rb-4.0.3&q=80&w=400" alt="Paneer Butter Masala">
+        <h3>Paneer Butter Masala</h3>
+        <p>Creamy and delicious paneer curry with rich tomato and butter gravy.</p>
+    </div>
+    <div class="recipe-card">
+        <img src="https://images.unsplash.com/photo-1617196038811-4c3cb5e244c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDV8fHBhbGFrJTIwcGFuZWVyfGVufDB8fHx8MTYwMTY5NDU4NA&ixlib=rb-4.0.3&q=80&w=400" alt="Palak Paneer">
+        <h3>Palak Paneer</h3>
+        <p>Healthy spinach curry with soft paneer cubes – perfect for a nutritious meal.</p>
+    </div>
+    <div class="recipe-card">
+        <img src="https://images.unsplash.com/photo-1592415485362-9b962937d07f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHNobWhpJTIwcGFuZWVyfGVufDB8fHx8MTYwMTY5NDU5Mg&ixlib=rb-4.0.3&q=80&w=400" alt="Shahi Paneer">
+        <h3>Shahi Paneer</h3>
+        <p>Royal Mughlai-style curry with creamy cashew and saffron flavors.</p>
+    </div>
+</section>
+
+<section id="contact" style="padding: 40px 20px; text-align:center;">
+    <h2>Contact Us</h2>
+    <p>Email: info@deliciousbites.com | Phone: +123-456-7890</p>
+    <form style="margin-top:20px;">
+        <input type="text" placeholder="Your Name" required style="padding:10px; width:200px; margin:5px;">
+        <input type="email" placeholder="Your Email" required style="padding:10px; width:200px; margin:5px;">
+        <textarea placeholder="Your Message" required style="padding:10px; width:420px; height:100px; margin:5px;"></textarea>
+        <br>
+        <button type="submit" style="padding:10px 20px; background-color:#ff6f3c; color:white; border:none; cursor:pointer;">Send</button>
+    </form>
+</section>
+
+<footer>
+    &copy; 2025 Delicious Bites. All Rights Reserved.
+</footer>
+<script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "14901255-f47b-432f-a63f-acd088a64040", // The ID of this integration.
+    region: "eu-de", // The region your integration is hosted in.
+    serviceInstanceID: "28fde865-a141-4419-96b5-e808fe4fc899", // The ID of your service instance.
+    onLoad: async (instance) => { await instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+</body>
+</html>
